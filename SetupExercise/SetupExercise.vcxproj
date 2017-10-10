@@ -138,6 +138,7 @@
     <ClInclude Include="..\..\..\..\GitHub\gameframework2d-master\include\gf2d_types.h" />
     <ClInclude Include="..\..\..\..\GitHub\gameframework2d-master\include\gf2d_vector.h" />
     <ClInclude Include="..\..\..\..\GitHub\gameframework2d-master\include\simple_logger.h" />
+    <ClInclude Include="gf2d_entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\game.c" />
@@ -146,6 +147,7 @@
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\gf2d_sprite.c" />
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\gf2d_vector.c" />
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\simple_logger.c" />
+    <ClCompile Include="gf2d_entity.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\GitHub\gameframework2d-master\src\Makefile" />

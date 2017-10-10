@@ -36,6 +36,9 @@
     <ClInclude Include="..\..\..\..\GitHub\gameframework2d-master\include\simple_logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="gf2d_entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\game.c">
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\GitHub\gameframework2d-master\src\simple_logger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gf2d_entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
