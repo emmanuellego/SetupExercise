@@ -1,4 +1,5 @@
 #include "gf2d_entity.h"
+#include "simple_logger.h"
 
 typedef struct {
 	Uint32 maxEnt;

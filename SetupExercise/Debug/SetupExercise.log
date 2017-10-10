@@ -1,9 +1,7 @@
 ﻿  gf2d_entity.c
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(11): warning C4013: 'gf2d_entity_clear_all' undefined; assuming extern returning int
 c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(17): warning C4013: 'slog' undefined; assuming extern returning int
 c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(36): warning C4018: '<': signed/unsigned mismatch
 c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(42): warning C4018: '<': signed/unsigned mismatch
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(44): warning C4013: 'gf2d_entity_delete' undefined; assuming extern returning int
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(53): error C2371: 'gf2d_entity_clear_all': redefinition; different basic types
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(55): warning C4018: '<': signed/unsigned mismatch
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(59): error C2371: 'gf2d_entity_delete': redefinition; different basic types
+c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(61): warning C4018: '<': signed/unsigned mismatch
+gf2d_entity.obj : error LNK2019: unresolved external symbol _slog referenced in function _gf2d_entity_init
+./SetupExercise.exe : fatal error LNK1120: 1 unresolved externals
