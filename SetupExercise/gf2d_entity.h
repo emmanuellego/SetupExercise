@@ -1,4 +1,6 @@
 #pragma once
+#ifndef __GF2D_ENTITY_H__
+#define __GF2D_ENTITY_H__
 
 #include <SDL.h>
 
@@ -29,13 +31,18 @@ void gf2d_entity_init(Uint32 maxSize);
  */
 void gf2d_entity_free(Entity *ent);
 
+/* @brief Creates a new Entity within the Entity Manager. 
+*/
+Entity *gf2d_entity_new();
+
 /* @brief Deletes the Entity from memory.
  * @param ent The Entity to be deleted.
  */
-
 void gf2d_entity_delete(Entity *ent);
 
 /* @brief Clears all Entities.
 */
 
 void gf2d_entity_clear_all();
+
+#endif

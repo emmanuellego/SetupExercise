@@ -1,7 +1,6 @@
 ﻿  gf2d_entity.c
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(17): warning C4013: 'slog' undefined; assuming extern returning int
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(36): warning C4018: '<': signed/unsigned mismatch
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(42): warning C4018: '<': signed/unsigned mismatch
-c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(61): warning C4018: '<': signed/unsigned mismatch
-gf2d_entity.obj : error LNK2019: unresolved external symbol _slog referenced in function _gf2d_entity_init
-./SetupExercise.exe : fatal error LNK1120: 1 unresolved externals
+c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(37): warning C4018: '<': signed/unsigned mismatch
+c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\poogl\documents\visual studio 2015\projects\setupexercise\setupexercise\gf2d_entity.c(62): warning C4018: '<': signed/unsigned mismatch
+  SetupExercise.vcxproj -> C:\Users\poogl\documents\visual studio 2015\Projects\SetupExercise\SetupExercise\./SetupExercise.exe
+  SetupExercise.vcxproj -> ./SetupExercise.pdb (Partial PDB)

@@ -11,6 +11,7 @@ static EntityManager entManager;
 void gf2d_entity_close() {
 	gf2d_entity_clear_all();
 	free(entManager.entList);
+	slog("Closed Entity Manager! Bye bye.");
 }
 
 void gf2d_entity_init(Uint32 maxSize) {

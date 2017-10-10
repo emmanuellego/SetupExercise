@@ -1,0 +1,11 @@
+﻿  game.c
+..\..\..\..\GitHub\gameframework2d-master\src\game.c(51): warning C4305: '+=': truncation from 'double' to 'float'
+  gf2d_entity.c
+gf2d_entity.c(38): warning C4018: '<': signed/unsigned mismatch
+gf2d_entity.c(44): warning C4018: '<': signed/unsigned mismatch
+gf2d_entity.c(63): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 34 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SetupExercise.vcxproj -> C:\Users\poogl\documents\visual studio 2015\Projects\SetupExercise\SetupExercise\./SetupExercise.exe
+  SetupExercise.vcxproj -> ./SetupExercise.pdb (Full PDB)
