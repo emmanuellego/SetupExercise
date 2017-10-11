@@ -52,6 +52,19 @@ Entity *gf2d_entity_new() {
 	return NULL;
 }
 
+void gf2d_entity_move(Entity *ent, Vector2D vel) {
+	ent->pos->x += vel.x;
+	ent->pos->y += vel.y;
+}
+
+void gf2d_entity_move_all(Vector2D vel) {
+	int ent;
+
+	for (ent = 0; ent < entManager.maxEnt; ent++) {
+		gf2d_entity_move(&entManager.entList[ent], vel);
+	}
+}
+
 void gf2d_entity_delete(Entity *ent) {
 	if (!ent)
 		return;

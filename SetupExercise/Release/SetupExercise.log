@@ -3,9 +3,11 @@
   gf2d_entity.c
 gf2d_entity.c(38): warning C4018: '<': signed/unsigned mismatch
 gf2d_entity.c(44): warning C4018: '<': signed/unsigned mismatch
-gf2d_entity.c(63): warning C4018: '<': signed/unsigned mismatch
+gf2d_entity.c(69): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  All 34 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  4 of 34 functions (11.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   SetupExercise.vcxproj -> C:\Users\poogl\documents\visual studio 2015\Projects\SetupExercise\SetupExercise\./SetupExercise.exe
   SetupExercise.vcxproj -> ./SetupExercise.pdb (Full PDB)
