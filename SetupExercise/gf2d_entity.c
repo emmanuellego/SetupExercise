@@ -1,6 +1,12 @@
 #include "gf2d_entity.h"
 #include "simple_logger.h"
 
+/**
+* @author EJ Go
+* @brief Creates a typedef for struct EntityManager
+* @param maxEnt Maximum amount of Entities
+* @param entList Pointer for a list of Entities
+*/
 typedef struct {
 	Uint32 maxEnt;
 	Entity * entList;
@@ -8,6 +14,9 @@ typedef struct {
 
 static EntityManager entManager;
 
+/**
+* @brief Closes the EntityManager.
+*/
 void gf2d_entity_close() {
 	gf2d_entity_clear_all();
 	free(entManager.entList);
@@ -32,11 +41,12 @@ void gf2d_entity_free(Entity *ent) {
 }
 
 Entity *gf2d_entity_new() {
-	int ent;
+	int ent; /**< Index value for the entList*/
 
 	// for loop looks for unused entity addresses
 	for (ent = 0; ent < entManager.maxEnt; ent++) {
-		entManager.entList[ent].entRefCount = 1;
+		if(entManager.entList[ent].entRefCount > 0)
+			entManager.entList[ent].entRefCount = 1;
 		return &entManager.entList[ent];
 	}
 
@@ -61,7 +71,8 @@ void gf2d_entity_move_all(Vector2D vel) {
 	int ent;
 
 	for (ent = 0; ent < entManager.maxEnt; ent++) {
-		gf2d_entity_move(&entManager.entList[ent], vel);
+		if (&entManager.entList[ent])
+			gf2d_entity_move(&entManager.entList[ent], vel);
 	}
 }
 

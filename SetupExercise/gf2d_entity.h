@@ -8,7 +8,8 @@
 #include "gf2d_vector.h"
 #include "gf2d_sprite.h"
 
-/* @brief Creates a typedef for struct Entity
+/** 
+ * @brief Creates a typedef for struct Entity
  * @param entRefCount Amount of Entity references
  * @param collider The collider/hitbox for the Entity
  * @param pos The position of the Entity
@@ -23,31 +24,46 @@ typedef struct Entity_S{
 
 }Entity;
 
-/* @brief Initializes the Entity Manager.
+/** 
+ * @brief Initializes the Entity Manager.
  * @param maxSize Allocates the maximum size for the Entity Manager. 
  */
 void gf2d_entity_init(Uint32 maxSize);
 
-/* @brief Frees and dereferences an Entity.
+/** 
+ * @brief Frees and dereferences an Entity.
  * @param ent The Entity to be dereferenced.
  */
 void gf2d_entity_free(Entity *ent);
 
-/* @brief Creates a new Entity within the Entity Manager. 
+/** 
+* @brief Creates a new Entity within the Entity Manager. 
+* @returns A new Entity is created.
 */
 Entity *gf2d_entity_new();
 
-/* @brief Changes the Entity's position. 
+/** 
+ * @brief Changes the Entity's position. 
+ * @param ent Pointer to the entity in question
  * @param vel Velocity at which the Entity moves.
  */
 void gf2d_entity_move(Entity *ent, Vector2D vel);
 
-/* @brief Deletes the Entity from memory.
+/** 
+* @brief Changes the position of all Entities within the EntityManager.
+* @param vel Velocity at which all the Entities move
+*/
+
+void gf2d_entity_move_all(Vector2D vel);
+
+/** 
+* @brief Deletes the Entity from memory.
 * @param ent The Entity to be deleted.
 */
 void gf2d_entity_delete(Entity *ent);
 
-/* @brief Clears all Entities.
+/** 
+* @brief Clears all Entities.
 */
 void gf2d_entity_clear_all();
 
